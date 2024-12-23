@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cinematic Christmas Journey</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Opening Scene -->
+        <div id="scene1" class="scene">
+            <h1 class="title">Merry Christmas, Mom!</h1>
+            <p class="subtitle">A journey through love and memories...</p>
+            <button onclick="nextScene()">Start</button>
+        </div>
+
+        <!-- Scene 2 -->
+        <div id="scene2" class="scene hidden">
+            <h2 class="message">Remember when we...</h2>
+            <p class="details">[Insert a favorite memory here]</p>
+            <button onclick="nextScene()">Next</button>
+        </div>
+
+        <!-- Final Scene -->
+        <div id="scene3" class="scene hidden">
+            <h2 class="final-message">You’re the best, Mom!</h2>
+            <p class="final-details">I’m so grateful for you. Thank you for everything you do!</p>
+            <button onclick="showGift()">Open Your Gift</button>
+        </div>
+
+        <!-- Gift -->
+        <div id="gift" class="hidden">
+            <div class="gift-box">
+                <p class="gift-message">Surprise! 🎁</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
