@@ -1,1 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, #000, #002244);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.scene {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.scene.active {
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    font-size: 4em;
+    color: gold;
+    animation: glow 2s infinite alternate;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background: gold;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+    color: white;
+}
+
+.gift-box {
+    margin-top: 50px;
+    font-size: 2em;
+    background: #ff0000;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px gold;
+    }
+    to {
+        text-shadow: 0 0 20px gold;
+    }
+}
 
